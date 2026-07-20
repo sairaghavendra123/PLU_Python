@@ -1,0 +1,10 @@
+CREATE TABLE Book (
+    BookID INT PRIMARY KEY,
+    BookName VARCHAR(100),
+    Author VARCHAR(100),
+    Price INT
+);
+CREATE PROCEDURE GetBooks
+AS
+BEGIN SELECT * FROM Book;
+END;
